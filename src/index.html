@@ -16,15 +16,48 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" type="text/css" />
   </head>
   <body>
-    <h1>Hello World</h1>
-    <!--
-    Add your solution here, feel free to update any of the HTML in this file as needed
-  -->
-
+    <header>
+      <a href="https://adhocteam.us/" class="title">Ad Hoc</a>
+      <nav>
+        <ul class="navmenu">
+          <li>
+            <a href="https://adhocteam.us/about/">About</a>
+          </li>
+          <li>
+            <a href="https://adhocteam.us/contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside id="reminder">
+        <p>Make sure you remember to have a great day!</p>
+        <button id="reminder-close">X</button>
+      </aside>
+      <img
+        src="./images/image.png"
+        alt="Cartoon depiction of a green envelope and test tube."
+      />
+      <h1>Examining the covidtests.gov architecture</h1>
+      <p>
+        A day early, the Biden Administration has quietly launched the new
+        website that allows households to order four COVID-19 rapid antigen
+        tests.
+      </p>
+      <form>
+        <label>Full Name <span>(required)</span></label>
+        <input type="text" required />
+        <label>Email <span>(required)</span></label>
+        <input type="email" required />
+        <label>Message <span>(required)</span></label>
+        <textarea required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
     <!-- JS -->
-    <script src="./src/js/script.js"></script>
+    <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>
