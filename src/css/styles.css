@@ -109,11 +109,9 @@ header * {
 }
 
 #reminder-close {
-  font-size: 1.5rem;
-  font-weight: bold;
   margin-left: var(--lg);
-  height: 50%;
   border: none;
+  cursor: pointer;
 }
 
 #reminder-close > svg {
@@ -136,4 +134,53 @@ header * {
   line-height: var(--lh-copy);
   color: var(--dk-gray);
   padding: var(--sm) var(--md);
+}
+
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--md);
+}
+
+form > * {
+  margin: var(--sm) 0;
+}
+
+label {
+  font-weight: bold;
+}
+
+form > input,
+textarea {
+  font-size: var(--font-copy);
+  padding: var(--md);
+}
+
+form > textarea {
+  height: 15ch;
+}
+
+form > button {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  align-self: flex-start;
+  padding: var(--md) var(--xl);
+}
+
+label > span {
+  color: var(--red);
+}
+
+#full-name-error,
+#email-error,
+#message-error {
+  color: var(--red);
+  font-weight: bold;
+}
+
+#success {
+  border: solid 1px var(--green);
+  padding: var(--sm);
+  display: none;
 }

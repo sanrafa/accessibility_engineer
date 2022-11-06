@@ -35,7 +35,7 @@
     <main>
       <aside id="reminder">
         <p>Make sure you remember to have a great day!</p>
-        <button id="reminder-close">
+        <button id="reminder-close" type="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
@@ -61,14 +61,18 @@
         website that allows households to order four COVID-19 rapid antigen
         tests.
       </p>
-      <form>
-        <label>Full Name <span>(required)</span></label>
-        <input type="text" required />
-        <label>Email <span>(required)</span></label>
-        <input type="email" required />
-        <label>Message <span>(required)</span></label>
-        <textarea required></textarea>
-        <button type="submit">Submit</button>
+      <form action="#" id="form">
+        <label for="full-name">Full Name <span>(required)</span></label>
+        <input type="text" required id="full-name" />
+        <span id="full-name-error"></span>
+        <label for="email">Email <span>(required)</span></label>
+        <input type="email" required id="email" />
+        <span id="email-error"></span>
+        <label for="message">Message <span>(required)</span></label>
+        <textarea required id="message"></textarea>
+        <span id="message-error"></span>
+        <span id="success">Your form was successfully submitted.</span>
+        <button type="submit" id="submit-btn">Submit</button>
       </form>
     </main>
     <!-- JS -->
