@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  font-family: Roboto, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
   line-height: 1.5;
@@ -90,4 +90,29 @@ header * {
 
 .navmenu > li {
   margin-right: var(--lg);
+}
+
+#reminder,
+#reminder-close {
+  background-color: var(--yellow);
+}
+
+#reminder {
+  display: flex;
+  padding: var(--sm);
+  margin: var(--lg) var(--md);
+}
+
+#reminder-close {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: var(--lg);
+  height: 50%;
+  border: none;
+}
+
+#reminder-close > svg {
+  height: 24px;
+  width: 24px;
 }
