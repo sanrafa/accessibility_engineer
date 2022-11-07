@@ -1,4 +1,8 @@
-# Accessibility Engineer
+# Accessibility Engineer Homework
+
+This is my solution for the [Ad-Hoc Accessibility Engineer](https://homework.adhoc.team/accessibility_engineer/) take-home exercise, written in vanilla HTML, CSS, and JavaScript.
+
+This webpage has been tested to be screenreader-accessible (with NVDA) and has a Lighthouse Accessibility Score of 100.
 
 ## Instructions & Guidelines
 

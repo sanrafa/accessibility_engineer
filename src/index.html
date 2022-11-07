@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Accessibility Engineer Homework</title>
 
@@ -33,10 +33,11 @@
       </nav>
     </header>
     <main>
-      <aside id="reminder">
+      <aside id="banner" tabindex="0">
         <p>Make sure you remember to have a great day!</p>
-        <button id="reminder-close" type="button">
+        <button id="close-banner" type="button">
           <svg
+            aria-label="close banner"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 50 50"
             width="50"
@@ -51,7 +52,7 @@
           </svg>
         </button>
       </aside>
-      <div class="container">
+      <div class="container" role="document">
         <img
           src="./images/image.png"
           alt="Cartoon depiction of a green envelope and test tube."
@@ -69,20 +70,22 @@
         <div class="input name">
           <label for="full-name">Full Name <span>(required)</span></label>
           <input type="text" required id="full-name" />
-          <span id="full-name-error"></span>
+          <span id="full-name-error" aria-live="assertive"></span>
         </div>
         <div class="input email">
           <label for="email">Email <span>(required)</span></label>
           <input type="email" required id="email" />
-          <span id="email-error"></span>
+          <span id="email-error" aria-live="assertive"></span>
         </div>
         <div class="input message">
           <label for="message">Message <span>(required)</span></label>
           <textarea required id="message"></textarea>
-          <span id="message-error"></span>
+          <span id="message-error" aria-live="assertive"></span>
         </div>
 
-        <span id="success">Your form was successfully submitted.</span>
+        <span id="success" aria-live="assertive"
+          >Your form was successfully submitted.</span
+        >
         <button type="submit" id="submit-btn">Submit</button>
       </form>
     </main>

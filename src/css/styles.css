@@ -99,24 +99,24 @@ header * {
   margin-right: var(--lg);
 }
 
-#reminder,
-#reminder-close {
+#banner,
+#close-banner {
   background-color: var(--yellow);
 }
 
-#reminder {
+#banner {
   display: flex;
   padding: var(--sm);
   margin: var(--lg) var(--md);
 }
 
-#reminder-close {
+#close-banner {
   margin-left: var(--lg);
   border: none;
   cursor: pointer;
 }
 
-#reminder-close > svg {
+#close-banner > svg {
   height: 24px;
   width: 24px;
 }
@@ -202,18 +202,18 @@ label > span {
     padding: var(--lg);
   }
 
-  #reminder {
+  #banner {
     margin: var(--lg) var(--xl);
     justify-content: space-between;
     width: 75%;
   }
 
-  #reminder > p {
+  #banner > p {
     align-self: center;
     padding: var(--md);
   }
 
-  #reminder-close {
+  #close-banner {
     padding: var(--md);
   }
 

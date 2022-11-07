@@ -1,8 +1,8 @@
 /* Close yellow banner */
-const closeBtn = document.getElementById("reminder-close");
-const reminder = document.getElementById("reminder");
+const closeBtn = document.getElementById("close-banner");
+const banner = document.getElementById("banner");
 
-closeBtn.addEventListener("click", () => (reminder.style.display = "none"));
+closeBtn.addEventListener("click", () => (banner.style.display = "none"));
 
 /* Form control & validation */
 const nameInput = document.getElementById("full-name");
