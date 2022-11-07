@@ -2,7 +2,9 @@
 
 This is my solution for the [Ad-Hoc Accessibility Engineer](https://homework.adhoc.team/accessibility_engineer/) take-home exercise, written in vanilla HTML, CSS, and JavaScript.
 
-This webpage has been tested to be screenreader-accessible (with NVDA) and has a Lighthouse Accessibility Score of 100.
+This webpage has been tested to be screen-reader-accessible (with NVDA) and has a Lighthouse Accessibility Score of 100.
+
+[Link to deployed site](https://rafa-a11y-takehome.netlify.app/)
 
 ## Instructions & Guidelines
 
