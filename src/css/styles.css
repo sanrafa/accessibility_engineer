@@ -69,6 +69,8 @@ h6 {
 main {
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
+  padding: var(--md);
 }
 
 header {
@@ -150,13 +152,14 @@ label {
   font-weight: bold;
 }
 
-form > input,
-textarea {
+.input > input,
+.input > textarea {
   font-size: var(--font-copy);
   padding: var(--md);
+  width: 100%;
 }
 
-form > textarea {
+.input > textarea {
   height: 15ch;
 }
 
@@ -166,10 +169,16 @@ form > button {
   border: none;
   align-self: flex-start;
   padding: var(--md) var(--xl);
+  cursor: pointer;
+}
+
+form > button:disabled {
+  cursor: not-allowed;
 }
 
 label > span {
   color: var(--red);
+  font-weight: normal;
 }
 
 #full-name-error,
@@ -183,4 +192,68 @@ label > span {
   border: solid 1px var(--green);
   padding: var(--sm);
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--lg);
+  }
+
+  #reminder {
+    margin: var(--lg) var(--xl);
+    justify-content: space-between;
+    width: 75%;
+  }
+
+  #reminder > p {
+    align-self: center;
+    padding: var(--md);
+  }
+
+  #reminder-close {
+    padding: var(--md);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    width: 75%;
+    margin-top: var(--lg);
+  }
+
+  form {
+    align-self: center;
+    width: 75%;
+    margin: 0 var(--xl);
+    display: grid;
+    grid-template-areas:
+      "n e ."
+      "m m m"
+      "s . .";
+    grid-template-columns: 40% 40% 20%;
+  }
+
+  .name {
+    grid-area: n;
+    margin-right: var(--lg);
+  }
+  .email {
+    grid-area: e;
+  }
+  .message {
+    grid-area: m;
+  }
+  form > button {
+    grid-area: s;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+  }
+
+  #success {
+    margin-left: var(--lg);
+  }
 }

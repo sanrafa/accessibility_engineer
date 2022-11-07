@@ -32,19 +32,19 @@ formInputs.forEach((input) => {
     input[0].addEventListener("change", () => {
       /* if required field left blank */
       if (input[0].validity.valueMissing) {
-        input[0].style.borderColor = "var(--red)";
+        input[0].style.border = "solid 1px var(--red)";
         input[1].innerText = requiredError;
       } else {
-        input[0].style.borderColor = "revert";
+        input[0].style.border = "revert";
         input[1].innerText = "";
       }
       /* If invalid email */
       if (input[0].type === "email" && !input[0].validity.valueMissing) {
         if (input[0].validity.typeMismatch) {
-          input[0].style.borderColor = "var(--red)";
+          input[0].style.border = "solid 1px var(--red)";
           input[1].innerText = emailError;
         } else {
-          input[0].style.borderColor = "revert";
+          input[0].style.border = "revert";
           input[1].innerText = "";
         }
       }

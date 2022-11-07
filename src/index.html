@@ -51,26 +51,37 @@
           </svg>
         </button>
       </aside>
-      <img
-        src="./images/image.png"
-        alt="Cartoon depiction of a green envelope and test tube."
-      />
-      <h1 class="heading">Examining the covidtests.gov architecture</h1>
-      <p class="copy">
-        A day early, the Biden Administration has quietly launched the new
-        website that allows households to order four COVID-19 rapid antigen
-        tests.
-      </p>
+      <div class="container">
+        <img
+          src="./images/image.png"
+          alt="Cartoon depiction of a green envelope and test tube."
+        />
+        <div>
+          <h1 class="heading">Examining the covidtests.gov architecture</h1>
+          <p class="copy">
+            A day early, the Biden Administration has quietly launched the new
+            website that allows households to order four COVID-19 rapid antigen
+            tests.
+          </p>
+        </div>
+      </div>
       <form action="#" id="form">
-        <label for="full-name">Full Name <span>(required)</span></label>
-        <input type="text" required id="full-name" />
-        <span id="full-name-error"></span>
-        <label for="email">Email <span>(required)</span></label>
-        <input type="email" required id="email" />
-        <span id="email-error"></span>
-        <label for="message">Message <span>(required)</span></label>
-        <textarea required id="message"></textarea>
-        <span id="message-error"></span>
+        <div class="input name">
+          <label for="full-name">Full Name <span>(required)</span></label>
+          <input type="text" required id="full-name" />
+          <span id="full-name-error"></span>
+        </div>
+        <div class="input email">
+          <label for="email">Email <span>(required)</span></label>
+          <input type="email" required id="email" />
+          <span id="email-error"></span>
+        </div>
+        <div class="input message">
+          <label for="message">Message <span>(required)</span></label>
+          <textarea required id="message"></textarea>
+          <span id="message-error"></span>
+        </div>
+
         <span id="success">Your form was successfully submitted.</span>
         <button type="submit" id="submit-btn">Submit</button>
       </form>
